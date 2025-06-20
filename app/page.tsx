@@ -31,9 +31,9 @@ const Home = () => {
         {noMessages ? (
           <>
             <p className="starter-text">
-              Welcome to F1GPT! Your AI-powered assistant for all things Formula
-              1—ask questions, explore race history, and get the latest updates
-              on your favorite teams and drivers.
+              Welcome to NFL! Your AI-powered assistant for all things NFL ask
+              questions and get the latest updates on your favorite teams and
+              players.
             </p>
             <br />
             <PromptSuggestionRow onPromptClick={handlePrompt} />
