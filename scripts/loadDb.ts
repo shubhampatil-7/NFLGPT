@@ -16,15 +16,18 @@ const {
 
 const openai = new OpenAi({ apiKey: OPEN_AI_API_KEY });
 
-const f1Data = [
-  "https://en.wikipedia.org/wiki/Formula_One",
-  "https://www.formula1.com/en/latest",
-  "https://en.wikipedia.org/wiki/2023_Formula_One_World_Championship",
-  "https://en.wikipedia.org/wiki/2022_Formula_One_World_Championship",
-  "https://en.wikipedia.org/wiki/List_of_Formula_One_World_Drivers%27_Champions",
-  "https://en.wikipedia.org/wiki/2024_Formula_One_World_Championship",
-  "https://www.formula1.com/en/results.html/2024/races.html",
-  "https://www.formula1.com/en/racing/2024.html",
+const NFLData = [
+  // Top 5 Essential NFL Sites - Latest Data
+  "https://en.wikipedia.org/wiki/National_Football_League",
+  "https://en.wikipedia.org/wiki/Super_Bowl",
+  "https://www.nfl.com/photos/ranking-the-nfl-s-biggest-contracts-for-2025",
+  "https://www.espn.com/nfl/coaches",
+  "https://en.wikipedia.org/wiki/AP_NFL_Most_Valuable_Player",
+  "https://www.nfl.com/news/",
+  "https://www.espn.com/nfl/",
+  "https://www.nfl.com/standings/",
+  "https://www.nfl.com/stats/",
+  "https://en.wikipedia.org/wiki/2025_NFL_season",
 ];
 
 // connect to db
@@ -52,7 +55,7 @@ const createCollection = async (
 
 const loadSampleData = async () => {
   const collection = await db.collection(ASTRA_DB_COLLECTION);
-  for await (const url of f1Data) {
+  for await (const url of NFLData) {
     const content = await scrapePage(url);
     const chunks = await splitter.splitText(content);
     for await (const chunk of chunks) {

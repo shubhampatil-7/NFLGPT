@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import f1Logo from "./assets/f1logo.png";
+import nflLogo from "./assets/nflLogo.png";
 import { useChat } from "@ai-sdk/react";
 import { Message } from "ai";
 
@@ -26,7 +26,7 @@ const Home = () => {
   };
   return (
     <main>
-      <Image src={f1Logo} width={250} alt="F1 Logo" />
+      <Image src={nflLogo} width={250} alt="F1 Logo" />
       <section className={noMessages ? "" : "populated"}>
         {noMessages ? (
           <>
@@ -43,7 +43,9 @@ const Home = () => {
             {messages.map((message, index) => (
               <Bubble key={`message-${index}`} message={message} />
             ))}
-            {status && <LoadingBubble />}
+            {(status === "submitted" || status === "streaming") && (
+              <LoadingBubble />
+            )}
           </>
         )}
         <form onSubmit={handleSubmit}>

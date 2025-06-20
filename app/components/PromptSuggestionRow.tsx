@@ -2,10 +2,10 @@ import PromptSuggestionButton from "./PromptSuggestionButton";
 
 const PromptSuggestionRow = ({ onPromptClick }) => {
   const prompts = [
-    "Who is head of racing for Aston Martin's F1 Academy team?",
-    "Who is the highest paid F1 driver?",
-    "Who will be the newest driver for Ferrari?",
-    "Who is the current Formula One World Driver's Champion?",
+    "Who is the highest paid NFL player?",
+    "Who won the most recent Super Bowl?",
+    "Who is the current NFL MVP?",
+    "Which team has the most Super Bowl wins?",
   ];
 
   return (
