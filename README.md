@@ -1,6 +1,7 @@
 # NFL GPT - RAG Chatbot
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app) that creates an NFL-focused chatbot using Retrieval-Augmented Generation (RAG) with LangChain.js.
+![image](https://github.com/user-attachments/assets/56e5d59b-8761-4e13-80be-7f1e6d355a63)
 
 ## Overview
 
