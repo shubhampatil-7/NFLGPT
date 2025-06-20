@@ -47,6 +47,7 @@ npm run seed
 ```
 
 This command will:
+
 - Scrape NFL websites for current data
 - Process and chunk the content using LangChain.js
 - Generate embeddings using OpenAI
@@ -79,18 +80,18 @@ To scrape different NFL websites or add new data sources:
 3. Run `npm run seed` again to update your database
 
 Example:
+
 ```typescript
 const NFLData = [
   "https://www.nfl.com/news/",
-  "https://www.espn.com/nfl/",
   // Add your custom URLs here
 ];
 ```
 
 ## Project Structure
 
-- `pages/index.tsx` - Main chat interface
-- `pages/api/` - API routes for chat functionality
+- `app/inde.tsx` - Main chat interface
+- `/api/chat` - API routes for chat functionality
 - `scripts/loadDb.ts` - Database seeding script
 - `.env` - Environment variables (create this file)
 
@@ -117,6 +118,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 **Note:** Before deploying, ensure you:
+
 1. Set up your environment variables in your deployment platform
 2. Run the seeding process in your production environment
 3. Configure your AstraDB for production access
@@ -134,6 +136,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 ### Support
 
 For issues related to:
+
 - AstraDB setup: Check [AstraDB documentation](https://docs.datastax.com/en/astra/docs/)
 - OpenAI API: Visit [OpenAI documentation](https://platform.openai.com/docs)
 - LangChain.js: See [LangChain.js documentation](https://js.langchain.com/docs/)
