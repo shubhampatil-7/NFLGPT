@@ -142,3 +142,45 @@ input:focus {
       calc(100% / 3) 0%;
   }
 }
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+
+  .starter-text {
+    font-size: 14px;
+  }
+
+  input.question-box {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    width: 20%;
+    font-size: 12px;
+  }
+
+  .bubble {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .prompt-suggestion-button {
+    font-size: 12px;
+    padding: 8px 10px;
+    flex: 1 1 100%;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  main {
+    height: 100vh;
+    padding: 10px;
+  }
+
+  .starter-text {
+    padding: 0 10px;
+  }
+}
